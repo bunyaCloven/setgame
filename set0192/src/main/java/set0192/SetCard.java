@@ -11,6 +11,16 @@ public class SetCard {
 	private Integer number;
 	private Shading shading;
 
+	public SetCard(int number, Shape shape, Colour colour, Shading shading) {
+		setNumber(number);
+		setShape(shape);
+		setColour(colour);
+		setShading(shading);
+	}
+
+	public SetCard() {
+	}
+
 	/**
 	 * gets the encoded string representation according to the project
 	 * documentation
@@ -58,54 +68,6 @@ public class SetCard {
 			throw new ImmutableAttributeException(shading);
 		}
 		return this;
-	}
-
-	public SetCard red() {
-		return setColour(Colour.RED);
-	}
-
-	public SetCard purple() {
-		return setColour(Colour.PURPLE);
-	}
-
-	public SetCard green() {
-		return setColour(Colour.GREEN);
-	}
-
-	public SetCard oval() {
-		return setShape(Shape.OVAL);
-	}
-
-	public SetCard squiggle() {
-		return setShape(Shape.SQUIGGLE);
-	}
-
-	public SetCard diamond() {
-		return setShape(Shape.DIAMOND);
-	}
-
-	public SetCard one() {
-		return setNumber(1);
-	}
-
-	public SetCard two() {
-		return setNumber(2);
-	}
-
-	public SetCard three() {
-		return setNumber(3);
-	}
-
-	public SetCard solid() {
-		return setShading(Shading.SOLID);
-	}
-
-	public SetCard striped() {
-		return setShading(Shading.STRIPED);
-	}
-
-	public SetCard outlined() {
-		return setShading(Shading.OUTLINED);
 	}
 
 	public Colour getColour() {

@@ -2,6 +2,7 @@ package set0192.player;
 
 import oop.utils.Console;
 import set0192.Identifiable;
+import set0192.SetLayout;
 import set0192.SetMove;
 
 public class SetPlayer implements Identifiable {
@@ -14,8 +15,6 @@ public class SetPlayer implements Identifiable {
 	}
 
 	public SetMove makeMove() {
-		// Console.printPrompt("Can't move coz i'm dumb says " + getName() +
-		// "\n");
 		String moveInput = Console.readLine("Please choose cards: ");
 		String[] cards = moveInput.split(" +");
 		return new SetMove(cards[0], cards[1], cards[2]);
