@@ -2,7 +2,7 @@ package set0192.player;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-/** Factory class for {@link SetPlayer} */
+/** Factory class for {@link Player} */
 public class PlayerFactory {
 	/** id of the next player */
 	private transient final AtomicLong identifier;
@@ -13,9 +13,9 @@ public class PlayerFactory {
 	}
 
 	/** @return a new player */
-	public SetPlayer newPlayer() {
-		final SetPlayer result = new SetPlayer();
-		result.setId(identifier.getAndIncrement());
+	public Player newPlayer() {
+		final Player result = new Player();
+		result.setIdentifier(identifier.getAndIncrement());
 		result.determineName();
 		return result;
 	}

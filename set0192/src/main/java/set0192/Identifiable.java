@@ -1,5 +1,7 @@
 package set0192;
 
+/** helper class to use with factories */
 public interface Identifiable {
-	void setId(Long identifier);
+	/** sets the identifier */
+	void setIdentifier(Long identifier);
 }
