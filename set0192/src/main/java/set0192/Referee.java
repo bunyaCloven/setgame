@@ -1,8 +1,8 @@
 package set0192;
 
+import java.time.Duration;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -22,6 +22,8 @@ public class Referee {
 	private transient final Queue<Player> turnQueue;
 	/** the layout of the game */
 	private transient final Layout layout;
+	/***/
+	private transient final TimedExecutor runner;
 
 	/** no-arg constructor */
 	public Referee() {
@@ -29,6 +31,7 @@ public class Referee {
 		this.layout = new Layout();
 		this.moves = new LinkedList<>();
 		this.gameOver = false;
+		this.runner = new TimedExecutor();
 	}
 
 	/** starts the game */
@@ -45,12 +48,13 @@ public class Referee {
 			final Move move = makeMoveAs(player);
 			if (isValidMove(move) && !moves.contains(move)) {
 				System.out.println("You have found a set!");
-				// FIXME: demeter cries in horror
 				moves.add(move);
-				player.incrementScore();
+				incrementScore(player);
 				if (getScore(player) > getWinningScore()) {
 					gameOver = true;
 				}
+			} else if (moves.contains(move)) {
+				System.out.println("This set is already found.");
 			}
 			turnQueue.offer(player);
 		} while (!gameOver);
@@ -58,45 +62,32 @@ public class Referee {
 		announceWinner();
 	}
 
-	// FIXME: shouldn't be there, make a synchronizing datasource instead
-	private Boolean didPrompt = false;
-
-	@SuppressWarnings("PMD.DoNotUseThreads")
 	/** @return the move the player made */
 	public Move makeMoveAs(final Player player) {
 		System.out
 				.println(getName(player)
-						+ ", it's your turn. Please enter 's' in 10 seconds to enter a set");
+						+ ", it's your turn. Please enter 's' in 10 seconds to make your move");
 		Move result = null;
-		final Thread thread = new Thread(() -> {
-			while (true) {
-				didPrompt = "s".equals(Console.readLine().trim()
-						.toLowerCase(Locale.ENGLISH));
-				if (didPrompt) {
-					break;
-				}
-			}
-		});
-		thread.start();
-		for (int i = 0; i < 1000; i++) {
-			try {
-				synchronized (this) {
-					if (didPrompt) {
-						break;
-					}
-					Thread.sleep(10);
-				}
-			} catch (InterruptedException ignored) {
-			}
-		}
-		thread.interrupt();
-		if (didPrompt) {
+		final Boolean val = runner.runOrTerminateIn(getPromptMoveLambda(),
+				Duration.ofSeconds(10));
+		if (val) {
 			result = new Move(Console.readLine(getName(player)
 					+ ", please choose cards: "));
 		} else {
 			System.out.println("You couldn't find any sets in given time");
 		}
 		return result;
+	}
+
+	@SuppressWarnings("PMD.DoNotUseThreads")
+	private Runnable getPromptMoveLambda() {
+		return () -> {
+			while (true) {
+				if ("s".equals(Console.readLine())) {
+					return;
+				}
+			}
+		};
 	}
 
 	private void announceWinner() {
@@ -113,7 +104,9 @@ public class Referee {
 	}
 
 	private boolean isValidMove(final Move move) {
-		return layout.isSet(move.getCard0(), move.getCard1(), move.getCard2());
+		return move != null
+				&& layout.isSet(move.getCard0(), move.getCard1(),
+						move.getCard2());
 	}
 
 	/** sets the winning criteria */
@@ -126,12 +119,17 @@ public class Referee {
 		return winningScore;
 	}
 
+	/** increments the score of the given player */
+	private void incrementScore(final Player player) {
+		player.incrementScore();
+	}
+
 	/** @return score of the player */
 	private Integer getScore(final Player player) {
 		return player.getScore();
 	}
 
-	private String getName(Player player) {
+	private String getName(final Player player) {
 		return player.getName();
 	}
 }
