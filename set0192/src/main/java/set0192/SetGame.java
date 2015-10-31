@@ -1,6 +1,5 @@
 package set0192;
 
-
 /** Main class. Contains {@link #main(String[])} which starts the game */
 @SuppressWarnings("PMD.UseUtilityClass")
 public class SetGame {
@@ -8,6 +7,7 @@ public class SetGame {
 	@SuppressWarnings("PMD.UseVarargs")
 	public static void main(final String[] args) {
 		final Referee referee = new Referee();
+		referee.setWinningScore(3);
 		referee.startGame(2);
 	}
 }

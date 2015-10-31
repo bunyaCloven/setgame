@@ -1,8 +1,8 @@
 package set0192.player;
 
+import oop.minimax.Score;
 import oop.utils.Console;
 import set0192.Identifiable;
-import set0192.Move;
 
 /** Players who will play the Set Game */
 public class Player implements Identifiable {
@@ -10,6 +10,14 @@ public class Player implements Identifiable {
 	private String name;
 	/** identifier of the player */
 	private Long identifier;
+	/** score of the player */
+	private final Score score;
+
+	/** a brand new player */
+	public Player() {
+		score = new Score();
+		score.setScore(0);
+	}
 
 	/** prompts the name from the user */
 	protected final void determineName() {
@@ -37,4 +45,13 @@ public class Player implements Identifiable {
 		return identifier;
 	}
 
+	/** @return the score of the player */
+	public Integer getScore() {
+		return score.getScore();
+	}
+
+	/** increases score by 1 */
+	public void incrementScore() {
+		score.setScore(score.getScore() + 1);
+	}
 }

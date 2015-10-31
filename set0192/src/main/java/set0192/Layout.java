@@ -51,13 +51,14 @@ public class Layout {
 		return getCard(Integer.valueOf(index));
 	}
 
-	/** decides if move is a set */
-	public boolean isSet(String card0, String card1, String card2) {
+	/** decides if three input cards is a set */
+	public boolean isSet(final String card0, final String card1,
+			final String card2) {
 		Boolean result = true;
 		for (int i = 0; i < 4; i++) {
-			final Character char0 = getByte(getCard(card0), i);
-			final Character char1 = getByte(getCard(card1), i);
-			final Character char2 = getByte(getCard(card2), i);
+			final Character char0 = getByte(getEncoded(getCard(card0)), i);
+			final Character char1 = getByte(getEncoded(getCard(card1)), i);
+			final Character char2 = getByte(getEncoded(getCard(card2)), i);
 			if (!isAllSame(char0, char1, char2)
 					&& !isAllDifferent(char0, char1, char2)) {
 				result = false;
@@ -79,7 +80,12 @@ public class Layout {
 	}
 
 	/** @return the character */
-	public Character getByte(final Card card, final Integer index) {
-		return card.getEncoded().charAt(index);
+	public Character getByte(final String target, final Integer index) {
+		return target.charAt(index);
+	}
+
+	/** @return string representation of the card */
+	public String getEncoded(final Card card) {
+		return card.getEncoded();
 	}
 }
