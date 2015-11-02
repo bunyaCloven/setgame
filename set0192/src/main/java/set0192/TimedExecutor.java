@@ -22,7 +22,6 @@ public class TimedExecutor {
 						break;
 					}
 					if (!isAlive(thread)) {
-						System.out.println(isAlive(thread));
 						break;
 					}
 					Thread.sleep(10);

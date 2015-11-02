@@ -64,6 +64,10 @@
             <ruleset>Basic</ruleset>
         </rule>
         <rule>
+            <name>CollapsibleIfStatements</name>
+            <ruleset>Basic</ruleset>
+        </rule>
+        <rule>
             <name>DontCallThreadRun</name>
             <ruleset>Basic</ruleset>
         </rule>
@@ -841,6 +845,10 @@
         </rule>
         <rule>
             <name>MoreThanOneLogger</name>
+            <ruleset>Java Logging</ruleset>
+        </rule>
+        <rule>
+            <name>SystemPrintln</name>
             <ruleset>Java Logging</ruleset>
         </rule>
         <rule>

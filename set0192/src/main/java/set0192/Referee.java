@@ -8,7 +8,6 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 import oop.utils.Console;
 import set0192.player.Player;
-import set0192.player.PlayerFactory;
 
 /** mediator of set game */
 public class Referee {
@@ -36,45 +35,52 @@ public class Referee {
 
 	/** starts the game */
 	public void startGame(final Integer playerCount) {
-		final PlayerFactory playerFactory = new PlayerFactory();
 		for (int i = 0; i < playerCount; i++) {
-			@SuppressWarnings("PMD.LawOfDemeter")
-			final Player player = playerFactory.newPlayer();
-			turnQueue.offer(player);
+			final String name = Console.readLine(" Player #" + i
+					+ " , please enter your name: ");
+			turnQueue.offer(new Player(name));
 		}
 		do {
-			layout.display();
+			for (final String part : splitToLines(layout.getAsString())) {
+				Console.printPrompt(part + '\n');
+			}
 			final Player player = turnQueue.poll();
 			final Move move = makeMoveAs(player);
 			if (isValidMove(move) && !moves.contains(move)) {
-				System.out.println("You have found a set!");
+				Console.printPrompt(" You have found a set!\n");
 				moves.add(move);
 				incrementScore(player);
 				if (getScore(player) > getWinningScore()) {
 					gameOver = true;
 				}
 			} else if (moves.contains(move)) {
-				System.out.println("This set is already found.");
+				Console.printPrompt(" This set is already found.\n");
+			} else if (move != null) {
+				// FIXME: tell what's wrong
+				Console.printPrompt(" These cards are not a set\n");
 			}
 			turnQueue.offer(player);
 		} while (!gameOver);
-		System.out.print("Game is over!");
+		Console.printPrompt("Game is over!\n");
 		announceWinner();
+	}
+
+	private String[] splitToLines(final String string) {
+		return string.split("\n");
 	}
 
 	/** @return the move the player made */
 	public Move makeMoveAs(final Player player) {
-		System.out
-				.println(getName(player)
-						+ ", it's your turn. Please enter 's' in 10 seconds to make your move");
+		Console.printPrompt(getName(player)
+				+ ", it's your turn. Please enter 's' in 10 seconds to make your move:");
 		Move result = null;
 		final Boolean val = runner.runOrTerminateIn(getPromptMoveLambda(),
 				Duration.ofSeconds(10));
 		if (val) {
-			result = new Move(Console.readLine(getName(player)
-					+ ", please choose cards: "));
+			result = new Move(Console.readLine(" " + getName(player)
+					+ ", please choose cards:"));
 		} else {
-			System.out.println("You couldn't find any sets in given time");
+			Console.printPrompt("\n You couldn't find any sets in given time.");
 		}
 		return result;
 	}
@@ -100,7 +106,7 @@ public class Referee {
 				winner = player;
 			}
 		}
-		System.out.println(getName(winner) + " won!");
+		Console.printPrompt(getName(winner) + " won!");
 	}
 
 	private boolean isValidMove(final Move move) {

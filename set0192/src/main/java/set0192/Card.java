@@ -5,6 +5,7 @@ import set0192.attribute.Shading;
 import set0192.attribute.Shape;
 
 /** Class representing cards in set game */
+@SuppressWarnings("PMD.ShortClassName")
 public class Card {
 	/** colour of the figures on the card */
 	private Colour colour;

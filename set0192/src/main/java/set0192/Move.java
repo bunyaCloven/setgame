@@ -1,6 +1,7 @@
 package set0192;
 
 /** move that players make in their turns */
+@SuppressWarnings("PMD.ShortClassName")
 public class Move {
 	/** card 1/3 of the selection */
 	private final String card0;
@@ -11,9 +12,7 @@ public class Move {
 
 	/** collection of three selected cards */
 	public Move(final String input) {
-		System.out.println("input: " + input);
 		final String[] cards = input.split(" +");
-		System.out.println("split: " + cards);
 		this.card0 = cards[0];
 		this.card1 = cards[1];
 		this.card2 = cards[2];

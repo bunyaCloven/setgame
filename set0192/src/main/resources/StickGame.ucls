@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.8" icons="true" automaticImage="JPEG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <interface id="1" language="java" name="oop.xml.XMLizable" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/xml/XMLizable.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="156" x="1306" y="1603"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" language="java" name="oop.xml.XMLFactory" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/xml/XMLFactory.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="136" x="1305" y="259"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="oop.utils.Console" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/utils/Console.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="146" width="107" x="1263" y="961"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="oop.utils.StackTrace" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/utils/StackTrace.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="92" width="117" x="42" y="259"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="oop.utils.ArgumentParser" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/utils/ArgumentParser.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="115" x="199" y="259"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="oop.sticks.MinimaxStrategy" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/sticks/MinimaxStrategy.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="169" x="398" y="259"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="oop.sticks.HumanPlayer" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/sticks/HumanPlayer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="128" width="100" x="1102" y="703"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="oop.sticks.SaveGameException" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/sticks/SaveGameException.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="121" x="1102" y="961"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="oop.sticks.Stick" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/sticks/Stick.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="92" width="70" x="813" y="1603"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="oop.sticks.Row" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/sticks/Row.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="200" width="123" x="697" y="1345"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="oop.sticks.Player" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/sticks/Player.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="218" width="118" x="902" y="445"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="oop.sticks.RandomStrategy" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/sticks/RandomStrategy.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="92" width="132" x="667" y="259"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="oop.sticks.Layout" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/sticks/Layout.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="344" width="237" x="454" y="961"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="oop.sticks.Move" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/sticks/Move.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="218" width="118" x="860" y="1345"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="oop.sticks.ComputerPlayer" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/sticks/ComputerPlayer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="218" width="143" x="717" y="703"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="oop.sticks.SticksGame" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/sticks/SticksGame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="182" width="149" x="902" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="17" language="java" name="oop.sticks.Strategy" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/sticks/Strategy.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="74" width="87" x="752" y="961"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="18" language="java" name="oop.sticks.Referee" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/sticks/Referee.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="146" width="114" x="1041" y="259"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="19" language="java" name="oop.minimax.IMove" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/minimax/IMove.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="56" width="76" x="530" y="1807"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="20" language="java" name="oop.minimax.Score" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/minimax/Score.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="164" width="91" x="244" y="1603"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="21" language="java" name="oop.minimax.IPlayer" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/minimax/IPlayer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="56" width="76" x="773" y="1807"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="22" language="java" name="oop.minimax.Minimax" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/minimax/Minimax.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="218" width="198" x="396" y="1345"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="23" language="java" name="oop.minimax.ILayout" project="SticksGame" 
+    file="/SticksGame/src/main/java/oop/minimax/ILayout.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="164" width="140" x="591" y="1603"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <association id="24">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="25" name="player"/>      
+      <multiplicity id="26" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="27">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="28">    
+    <bendpoint x="365" y="445"/>    
+    <bendpoint x="344" y="703"/>    
+    <bendpoint x="344" y="961"/>    
+    <bendpoint x="344" y="1345"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="29">    
+    <bendpoint x="560" y="445"/>    
+    <bendpoint x="602" y="703"/>    
+    <bendpoint x="721" y="961"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="30">    
+    <bendpoint x="1400" y="445"/>    
+    <bendpoint x="1400" y="703"/>    
+    <bendpoint x="1400" y="961"/>    
+    <bendpoint x="1400" y="1345"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="31">    
+    <bendpoint x="1232" y="259"/>    
+    <bendpoint x="1232" y="445"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="32">    
+    <bendpoint x="597" y="259"/>    
+    <bendpoint x="581" y="445"/>    
+    <bendpoint x="581" y="703"/>    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="33" name="layout"/>      
+      <multiplicity id="34" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="35">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <dependency id="36">    
+    <bendpoint x="386" y="445"/>    
+    <bendpoint x="386" y="703"/>    
+    <bendpoint x="365" y="961"/>    
+    <bendpoint x="365" y="1345"/>    
+    <bendpoint x="365" y="1603"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <association id="37">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="38" name="curPlayer"/>      
+      <multiplicity id="39" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="40">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="41">    
+    <bendpoint x="911" y="259"/>    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="42" name="players"/>      
+      <multiplicity id="43" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="44">    
+    <bendpoint x="560" y="1603"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="45" name="players"/>      
+      <multiplicity id="46" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="47">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="48" name="players"/>      
+      <multiplicity id="49" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="50">    
+    <bendpoint x="1274" y="259"/>    
+    <bendpoint x="1274" y="445"/>    
+    <bendpoint x="1274" y="703"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <association id="51">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="52" name="rows"/>      
+      <multiplicity id="53" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="54">    
+    <bendpoint x="344" y="259"/>    
+    <bendpoint x="344" y="445"/>    
+    <bendpoint x="365" y="703"/>    
+    <bendpoint x="386" y="961"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <dependency id="55">    
+    <bendpoint x="808" y="445"/>    
+    <bendpoint x="890" y="703"/>    
+    <bendpoint x="890" y="961"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="56">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <generalization id="57">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <association id="58">    
+    <bendpoint x="850" y="445"/>    
+    <bendpoint x="686" y="703"/>    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="59" name="layout"/>      
+      <multiplicity id="60" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="61">    
+    <bendpoint x="666" y="1345"/>    
+    <bendpoint x="782" y="1603"/>    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <dependency id="62">    
+    <bendpoint x="1253" y="259"/>    
+    <bendpoint x="1253" y="445"/>    
+    <bendpoint x="1253" y="703"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <association id="63">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="64" name="layout"/>      
+      <multiplicity id="65" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="66">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <association id="67">    
+    <bendpoint x="435" y="445"/>    
+    <bendpoint x="435" y="703"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="68" name="layout"/>      
+      <multiplicity id="69" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="70">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <realization id="71">    
+    <bendpoint x="602" y="445"/>    
+    <bendpoint x="644" y="703"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="17"/>  
+  </realization>  
+  <dependency id="72">    
+    <bendpoint x="1050" y="703"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="73">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="74">    
+    <bendpoint x="1071" y="445"/>    
+    <bendpoint x="1071" y="703"/>    
+    <bendpoint x="1071" y="961"/>    
+    <bendpoint x="1071" y="1345"/>    
+    <bendpoint x="1071" y="1603"/>    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <dependency id="75">    
+    <bendpoint x="472" y="1603"/>    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="76">    
+    <bendpoint x="871" y="259"/>    
+    <bendpoint x="871" y="445"/>    
+    <bendpoint x="911" y="703"/>    
+    <bendpoint x="911" y="961"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <realization id="77">    
+    <bendpoint x="1471" y="259"/>    
+    <bendpoint x="1471" y="445"/>    
+    <bendpoint x="1471" y="703"/>    
+    <bendpoint x="1471" y="961"/>    
+    <bendpoint x="1471" y="1345"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="78">    
+    <bendpoint x="987" y="703"/>    
+    <bendpoint x="1008" y="961"/>    
+    <bendpoint x="1008" y="1345"/>    
+    <bendpoint x="1008" y="1603"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <dependency id="79">    
+    <bendpoint x="829" y="259"/>    
+    <bendpoint x="829" y="445"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <association id="80">    
+    <bendpoint x="623" y="445"/>    
+    <bendpoint x="623" y="703"/>    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="81" name="layout"/>      
+      <multiplicity id="82" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="83">    
+    <bendpoint x="645" y="1345"/>    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="23"/>  
+  </realization>  
+  <association id="84">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="85" name="players"/>      
+      <multiplicity id="86" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="87">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <dependency id="88">    
+    <bendpoint x="932" y="703"/>    
+    <bendpoint x="932" y="961"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <realization id="89">    
+    <bendpoint x="665" y="445"/>    
+    <bendpoint x="665" y="703"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="17"/>  
+  </realization>  
+  <dependency id="90">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <association id="91">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="92" name="strategy"/>      
+      <multiplicity id="93" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="94">    
+    <bendpoint x="1050" y="961"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="95">    
+    <bendpoint x="407" y="445"/>    
+    <bendpoint x="407" y="703"/>    
+    <bendpoint x="407" y="961"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <association id="96">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="97" name="referee"/>      
+      <multiplicity id="98" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="99">    
+    <bendpoint x="869" y="961"/>    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="100">    
+    <bendpoint x="624" y="1345"/>    
+    <bendpoint x="539" y="1603"/>    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="101">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="102">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="103">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="104">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="105">    
+    <bendpoint x="1211" y="445"/>    
+    <bendpoint x="1232" y="703"/>    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="106">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <realization id="107">    
+    <bendpoint x="761" y="1603"/>    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="19"/>  
+  </realization>  
+  <dependency id="108">    
+    <bendpoint x="644" y="445"/>    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="109">    
+    <bendpoint x="701" y="445"/>    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <realization id="110">    
+    <bendpoint x="1029" y="703"/>    
+    <bendpoint x="1029" y="961"/>    
+    <bendpoint x="1029" y="1345"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <dependency id="111">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <association id="112">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="113" name="player"/>      
+      <multiplicity id="114" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="115">    
+    <bendpoint x="1050" y="445"/>    
+    <bendpoint x="1008" y="703"/>    
+    <bendpoint x="987" y="961"/>    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="false" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -9,7 +9,6 @@ import static set0192.attribute.Shading.STRIPED;
 import static set0192.attribute.Shape.DIAMOND;
 import static set0192.attribute.Shape.OVAL;
 import static set0192.attribute.Shape.SQUIGGLE;
-import oop.utils.Console;
 
 /** Class that represents the layout of the cards */
 
@@ -31,14 +30,18 @@ public class Layout {
 					new Card(1, OVAL, PURPLE, OUTLINED),
 					new Card(2, SQUIGGLE, PURPLE, STRIPED) } };
 
-	/** displays the layout on the console */
-	public void display() {
+	/** some guidelines say {@link #toString()} should not be overwritten */
+	public String getAsString() {
+		final StringBuffer buffer = new StringBuffer();
+		buffer.append('\n');
 		for (final Card[] row : cards) {
 			for (final Card card : row) {
-				Console.printPrompt(card.getEncoded());
+				buffer.append(card.getEncoded());
+				buffer.append(' ');
 			}
-			System.out.println();
+			buffer.append('\n');
 		}
+		return buffer.toString();
 	}
 
 	/** @return a card from the layout, 0 being the card in the top left corner */
@@ -55,15 +58,19 @@ public class Layout {
 	public boolean isSet(final String card0, final String card1,
 			final String card2) {
 		Boolean result = true;
-		for (int i = 0; i < 4; i++) {
-			final Character char0 = getByte(getEncoded(getCard(card0)), i);
-			final Character char1 = getByte(getEncoded(getCard(card1)), i);
-			final Character char2 = getByte(getEncoded(getCard(card2)), i);
-			if (!isAllSame(char0, char1, char2)
-					&& !isAllDifferent(char0, char1, char2)) {
-				result = false;
-				break;
+		try {
+			for (int i = 0; i < 4; i++) {
+				final Character char0 = getByte(getEncoded(getCard(card0)), i);
+				final Character char1 = getByte(getEncoded(getCard(card1)), i);
+				final Character char2 = getByte(getEncoded(getCard(card2)), i);
+				if (!isAllSame(char0, char1, char2)
+						&& !isAllDifferent(char0, char1, char2)) {
+					result = false;
+					break;
+				}
 			}
+		} catch (IndexOutOfBoundsException e) {
+			result = false; //
 		}
 		return result;
 	}
