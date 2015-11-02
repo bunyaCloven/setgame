@@ -38,7 +38,9 @@ public class Referee {
 		for (int i = 0; i < playerCount; i++) {
 			final String name = Console.readLine(" Player #" + i
 					+ " , please enter your name: ");
-			turnQueue.offer(new Player(name));
+			@SuppressWarnings("PMD.AvoidInstantiatingObjectsInLoops")
+			final Player player = new Player(name);
+			turnQueue.offer(player);
 		}
 		do {
 			for (final String part : splitToLines(layout.getAsString())) {
